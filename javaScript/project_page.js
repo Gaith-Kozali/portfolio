@@ -1,5 +1,6 @@
 
      import { projects } from './database.js';
+     import {preventDownloadImg} from './index.js';
     const params = new URLSearchParams(window.location.search);
     const projectName = params.get('project') || params.get('name'); 
 
@@ -64,3 +65,4 @@
     }
 
     projectTypeEl.textContent = project.isTrainProject ? 'Training / Demo Project' : 'Production / Client Project';
+    preventDownloadImg();

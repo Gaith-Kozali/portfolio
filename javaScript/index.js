@@ -24,13 +24,22 @@ onload = function () {
 
     }, 4000); 
   }
-
+   
   showSentence();
+  preventDownloadImg();
   projectFun();
 };
 
 
 
+
+export const preventDownloadImg = function(){
+document.addEventListener('contextmenu', function(e) {
+  if (e.target.tagName === 'IMG') {
+    e.preventDefault();
+  }
+});
+}
 
 
 let projectFun = function(){
