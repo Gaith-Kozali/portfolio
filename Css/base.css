@@ -1,0 +1,29 @@
+:root{
+    --font-family:  'roboto', sans-serif;
+    --primary-color: #06305b;
+    --light-primary-color:#7ec8e3;
+     --background-color: linear-gradient(to bottom right, var(--primary-color) ,var(--light-primary-color));
+    --glass-background-color:  #ffffff15;
+    --primary-text-color: #ffffff;
+    --secondary-text-color: rgb(27, 27, 27);
+    --button-text-color: black;
+    --accent-color: #f4c542;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --content-padding: 24px 16px;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+}
+html{
+    font-family: var(--font-family);
+    color: var(--primary-text-color);
+    scroll-behavior: smooth;
+}
+
+
+
