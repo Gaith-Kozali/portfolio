@@ -26,6 +26,7 @@ body{
       padding:var(--content-padding);
       background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
       border-radius:12px;
+      -webkit-backdrop-filter: blur(6px);
       backdrop-filter: blur(6px);
       min-height:320px;
       display:flex;
