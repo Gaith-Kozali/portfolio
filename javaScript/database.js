@@ -1,5 +1,14 @@
-   class Project {
-  constructor(name, summary, description, images, technology, isTrainProject, sourceCodeLink,demo) {
+class Project {
+  constructor(
+    name,
+    summary,
+    description,
+    images,
+    technology,
+    isTrainProject,
+    sourceCodeLink,
+    demo,
+  ) {
     this.name = name;
     this.summary = summary;
     this.description = description;
@@ -7,11 +16,201 @@
     this.technology = technology;
     this.isTrainProject = isTrainProject;
     this.sourceCodeLink = sourceCodeLink;
-    this.demo =demo;
+    this.demo = demo;
   }
 }
 
 export const projects = [
+  new Project(
+    "E-commerce Website & Admin Dashboard",
+    "A full-stack e-commerce platform that allows customers to explore products, make inquiries, and place orders through WhatsApp, while providing administrators with tools to manage products and categories.",
+    `
+  <div class="project-description">
+
+    <section>
+      <h3>Overview</h3>
+      <p>
+        A full-stack e-commerce platform designed to simplify online product
+        browsing and store management. Customers can explore products, submit
+        inquiries, and place orders through WhatsApp.
+      </p>
+    </section>
+
+    <section>
+      <h3>Customer Features</h3>
+      <ul>
+        <li>
+          <strong>Product Browsing:</strong>
+          Explore available products and browse different categories.
+        </li>
+        <li>
+          <strong>Server-Side Pagination:</strong>
+          Navigate through products with efficient pagination.
+        </li>
+        <li>
+          <strong>WhatsApp Ordering:</strong>
+          Place orders and send product inquiries directly through WhatsApp.
+        </li>
+        <li>
+          <strong>Customer Reviews:</strong>
+          View embedded content and reviews from Facebook and YouTube.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Admin Dashboard</h3>
+      <ul>
+        <li>
+          <strong>Product Management:</strong>
+          Create, update, delete, and manage products.
+        </li>
+        <li>
+          <strong>Category Management:</strong>
+          Organize and manage product categories.
+        </li>
+        <li>
+          <strong>Dedicated Admin Operations:</strong>
+          Separate API endpoints for administrative operations.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Backend & Architecture</h3>
+      <ul>
+        <li>Designed and implemented 104 RESTful API endpoints with separate Admin and User operations.</li>
+        <li>Applied Layered Architecture (Domain, Application, and Infrastructure).</li>
+        <li>Used Entity Framework Core and SQL Server for data access.</li>
+        <li>Implemented centralized exception handling and server-side pagination.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Technologies</h3>
+      <p>
+        ASP.NET Core Web API, C#, Entity Framework Core, SQL Server,
+        Next.js, TypeScript, Tailwind CSS, RESTful APIs.
+      </p>
+    </section>
+
+  </div>
+  `,
+    [
+      "Images/Projects/ecommerceProject/Screenshot 2026-11-25 143711.png",
+      "Images/Projects/ecommerceProject/Screenshot 2026-11-25 143733.png",
+      "Images/Projects/ecommerceProject/Screenshot 2026-11-25 143752.png",
+      "Images/Projects/ecommerceProject/Screenshot 2026-11-25 143812.png",
+      "Images/Projects/ecommerceProject/Screenshot 2026-11-25 143842.png",
+      "Images/Projects/ecommerceProject/Screenshot 2026-11-25 143910.png",
+      "Images/Projects/ecommerceProject/Screenshot 2026-11-25 143934.png",
+      "Images/Projects/ecommerceProject/Screenshot 2026-11-25 143950.png",
+    ],
+    "ASP.NET Core Web API, C#, Entity Framework Core, SQL Server, Next.js, TypeScript, Tailwind CSS, RESTful APIs",
+    false,
+    null,
+    null,
+  ),
+  new Project(
+    "Match",
+    "A football platform that brings players and teams together to organize matches, compete against other teams, and book football fields.",
+    `
+  <div class="project-description">
+
+    <section>
+      <h3>Overview</h3>
+      <p>
+        Match is a football platform designed to make organizing and playing
+        football easier by connecting players, teams, and football clubs.
+      </p>
+    </section>
+
+    <section>
+      <h3>Player Features</h3>
+      <ul>
+        <li>
+          <strong>Team Creation:</strong>
+          Create football teams and invite friends to join.
+        </li>
+        <li>
+          <strong>Match Challenges:</strong>
+          Challenge other teams and organize competitive matches.
+        </li>
+        <li>
+          <strong>Performance Tracking:</strong>
+          Track wins, losses, points, and match history.
+        </li>
+        <li>
+          <strong>Field Booking:</strong>
+          Browse available football fields and make bookings.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Club App</h3>
+      <p>
+        The platform also includes a separate application for club staff,
+        providing tools to manage club operations.
+      </p>
+      <ul>
+        <li>
+          <strong>Club Management:</strong>
+          Manage club information and available football fields.
+        </li>
+        <li>
+          <strong>Booking Management:</strong>
+          Receive and manage field booking requests.
+        </li>
+        <li>
+          <strong>Equipment Management:</strong>
+          Manage bookable equipment and facilities.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>My Contribution</h3>
+      <p>
+        Worked on the Flutter User App as part of a freelance team of four
+        developers. My responsibilities included:
+      </p>
+      <ul>
+        <li>Implementing team creation and player invitation features.</li>
+        <li>Developing match challenges and related functionality.</li>
+        <li>Implementing football field booking features.</li>
+        <li>Applying BLoC state management and pagination.</li>
+        <li>Integrating Firebase Cloud Messaging.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Technologies</h3>
+      <p>
+        Flutter, Dart, BLoC, Clean Architecture, RESTful APIs,
+        Firebase Cloud Messaging (FCM), Google Analytics.
+      </p>
+    </section>
+
+  </div>
+  `,
+    [
+      "Images/Projects/match/Screenshot_20261125_142240.jpg",
+      "Images/Projects/match/Screenshot_20261125_142317.jpg",
+      "Images/Projects/match/Screenshot_20261125_142325.jpg",
+      "Images/Projects/match/Screenshot_20261125_142336.jpg",
+      "Images/Projects/match/Screenshot_20261125_142359.jpg",
+      "Images/Projects/match/Screenshot_20261125_142443.jpg",
+      "Images/Projects/match/Screenshot_20261125_142501.jpg",
+      "Images/Projects/match/Screenshot_20261125_142542.jpg",
+      "Images/Projects/match/Screenshot_20261125_142602.jpg",
+      "Images/Projects/match/Screenshot_20261125_142613.jpg",
+    ],
+    "Flutter, Dart, BLoC, Clean Architecture, RESTful APIs, Firebase Cloud Messaging (FCM), Google Analytics",
+    false,
+    null,
+    null,
+  ),
   new Project(
     "AIU Graduation Project",
     "Interactive English learning app for children",
@@ -42,33 +241,33 @@ Technical highlights: Flutter front-end for cross-platform native performance; C
 This platform delivers a safe, engaging, and data-driven learning ecosystem that blends AR and AI to make early English learning interactive, effective, and collaborative between teachers and families.
 </p>
 `,
-[
-  "Images/Projects/GRADUATION_PROJECT/9.jpg",
-  "Images/Projects/GRADUATION_PROJECT/1.jpg",
-  "Images/Projects/GRADUATION_PROJECT/2.jpg",
-  "Images/Projects/GRADUATION_PROJECT/3.jpg",
-  "Images/Projects/GRADUATION_PROJECT/4.jpg",
-  "Images/Projects/GRADUATION_PROJECT/5.jpg",
-  "Images/Projects/GRADUATION_PROJECT/6.jpg",
-  "Images/Projects/GRADUATION_PROJECT/7.jpg",
-  "Images/Projects/GRADUATION_PROJECT/8.jpg",
-  "Images/Projects/GRADUATION_PROJECT/10.jpg",
-  "Images/Projects/GRADUATION_PROJECT/11.jpg",
-  "Images/Projects/GRADUATION_PROJECT/12.jpg",
-  "Images/Projects/GRADUATION_PROJECT/13.jpg",
-  "Images/Projects/GRADUATION_PROJECT/14.jpg",
-  "Images/Projects/GRADUATION_PROJECT/15.jpg",
-  "Images/Projects/GRADUATION_PROJECT/16.jpg",
-  "Images/Projects/GRADUATION_PROJECT/17.jpg",
-  "Images/Projects/GRADUATION_PROJECT/18.jpg",
-  "Images/Projects/GRADUATION_PROJECT/19.jpg",
-  "Images/Projects/GRADUATION_PROJECT/20.jpg",
-  "Images/Projects/GRADUATION_PROJECT/21.jpg",
-  "Images/Projects/GRADUATION_PROJECT/22.jpg"
-]
-, "Flutter, Bloc, clean Architecture, Ar, go_router, Dio, Ai, Django, Figma",
+    [
+      "Images/Projects/GRADUATION_PROJECT/9.jpg",
+      "Images/Projects/GRADUATION_PROJECT/1.jpg",
+      "Images/Projects/GRADUATION_PROJECT/2.jpg",
+      "Images/Projects/GRADUATION_PROJECT/3.jpg",
+      "Images/Projects/GRADUATION_PROJECT/4.jpg",
+      "Images/Projects/GRADUATION_PROJECT/5.jpg",
+      "Images/Projects/GRADUATION_PROJECT/6.jpg",
+      "Images/Projects/GRADUATION_PROJECT/7.jpg",
+      "Images/Projects/GRADUATION_PROJECT/8.jpg",
+      "Images/Projects/GRADUATION_PROJECT/10.jpg",
+      "Images/Projects/GRADUATION_PROJECT/11.jpg",
+      "Images/Projects/GRADUATION_PROJECT/12.jpg",
+      "Images/Projects/GRADUATION_PROJECT/13.jpg",
+      "Images/Projects/GRADUATION_PROJECT/14.jpg",
+      "Images/Projects/GRADUATION_PROJECT/15.jpg",
+      "Images/Projects/GRADUATION_PROJECT/16.jpg",
+      "Images/Projects/GRADUATION_PROJECT/17.jpg",
+      "Images/Projects/GRADUATION_PROJECT/18.jpg",
+      "Images/Projects/GRADUATION_PROJECT/19.jpg",
+      "Images/Projects/GRADUATION_PROJECT/20.jpg",
+      "Images/Projects/GRADUATION_PROJECT/21.jpg",
+      "Images/Projects/GRADUATION_PROJECT/22.jpg",
+    ],
+    "Flutter, Bloc, clean Architecture, Ar, go_router, Dio, Ai, Django, Figma",
     false,
-    ""
+    "",
   ),
 
   new Project(
@@ -96,22 +295,22 @@ This platform delivers a safe, engaging, and data-driven learning ecosystem that
     <p>
     The application is now easier to maintain and extend, enabling faster delivery of new features and smooth partner integrations while providing reliable, scalable functionality for both front-of-house staff and customers.
     </p>`,
-[
-  "Images/Projects/restaurant/5.jpg",
-  "Images/Projects/restaurant/1.jpg",
-  "Images/Projects/restaurant/2.jpg",
-  "Images/Projects/restaurant/3.jpg",
-  "Images/Projects/restaurant/4.jpg",
-  "Images/Projects/restaurant/6.jpg",
-  "Images/Projects/restaurant/7.jpg",
-  "Images/Projects/restaurant/8.jpg",
-  "Images/Projects/restaurant/9.jpg",
-  "Images/Projects/restaurant/10.jpg",
-  "Images/Projects/restaurant/11.jpg"
-], 
-  "Flutter, REST API, Firebase Messaging, Bloc, Payment , clean architecture, dartz, flutter_screenutil, Dio",
+    [
+      "Images/Projects/restaurant/5.jpg",
+      "Images/Projects/restaurant/1.jpg",
+      "Images/Projects/restaurant/2.jpg",
+      "Images/Projects/restaurant/3.jpg",
+      "Images/Projects/restaurant/4.jpg",
+      "Images/Projects/restaurant/6.jpg",
+      "Images/Projects/restaurant/7.jpg",
+      "Images/Projects/restaurant/8.jpg",
+      "Images/Projects/restaurant/9.jpg",
+      "Images/Projects/restaurant/10.jpg",
+      "Images/Projects/restaurant/11.jpg",
+    ],
+    "Flutter, REST API, Firebase Messaging, Bloc, Payment , clean architecture, dartz, flutter_screenutil, Dio",
     false,
-    ""
+    "",
   ),
 
   new Project(
@@ -119,38 +318,44 @@ This platform delivers a safe, engaging, and data-driven learning ecosystem that
     "Weather forecast",
     `<p> A cross-platform Flutter app that provides weather forecasts for any location worldwide. Built with Dart using Clean Architecture and Bloc state management to ensure maintainable, testable code and make future changes easy.</p>
      <p> This project was developed as part of a training program at Cyber Royale using the company’s UI/UX design. The app is under active development and will be expanded and improved over time.</p>
-     <p> Notes: the app does not run on web due to the internet_connection_checker package not supporting web; when offline the app falls back to cached data and notifies the user that cached data is shown. Special thanks to Cyber Royale for the training opportunity.</p>`, 
-    ["Images/Projects/weather_app/1.jpg","Images/Projects/weather_app/2.jpg","Images/Projects/weather_app/3.jpg","Images/Projects/weather_app/4.jpg","Images/Projects/weather_app/5.jpg"],
+     <p> Notes: the app does not run on web due to the internet_connection_checker package not supporting web; when offline the app falls back to cached data and notifies the user that cached data is shown. Special thanks to Cyber Royale for the training opportunity.</p>`,
+    [
+      "Images/Projects/weather_app/1.jpg",
+      "Images/Projects/weather_app/2.jpg",
+      "Images/Projects/weather_app/3.jpg",
+      "Images/Projects/weather_app/4.jpg",
+      "Images/Projects/weather_app/5.jpg",
+    ],
     "Flutter, REST API",
     true,
-    "https://github.com/Gaith-Kozali/weatherio"
+    "https://github.com/Gaith-Kozali/weatherio",
   ),
 
   new Project(
     "Chatbot",
     "Conversational AI app",
     "Chatbot program will allow you to chat with Ai I connected the program with chatgpt 3 and build the prgram using clean architecture to have best and clean code.\n The App have three mode dark & light & system purple .\n ui/ux is from cyber royale company and app build for training .",
-   [
-  "Images/Projects/chatbot/1.jpg",
-  "Images/Projects/chatbot/2.jpg",
-  "Images/Projects/chatbot/3.jpg",
-  "Images/Projects/chatbot/4.jpg",
-  "Images/Projects/chatbot/5.jpg",
-  "Images/Projects/chatbot/6.jpg",
-  "Images/Projects/chatbot/7.jpg",
-  "Images/Projects/chatbot/8.jpg",
-  "Images/Projects/chatbot/9.jpg",
-  "Images/Projects/chatbot/10.jpg",
-  "Images/Projects/chatbot/11.jpg",
-  "Images/Projects/chatbot/12.jpg",
-  "Images/Projects/chatbot/13.jpg",
-  "Images/Projects/chatbot/14.jpg",
-  "Images/Projects/chatbot/15.jpg",
-  "Images/Projects/chatbot/16.jpg"
-],
+    [
+      "Images/Projects/chatbot/1.jpg",
+      "Images/Projects/chatbot/2.jpg",
+      "Images/Projects/chatbot/3.jpg",
+      "Images/Projects/chatbot/4.jpg",
+      "Images/Projects/chatbot/5.jpg",
+      "Images/Projects/chatbot/6.jpg",
+      "Images/Projects/chatbot/7.jpg",
+      "Images/Projects/chatbot/8.jpg",
+      "Images/Projects/chatbot/9.jpg",
+      "Images/Projects/chatbot/10.jpg",
+      "Images/Projects/chatbot/11.jpg",
+      "Images/Projects/chatbot/12.jpg",
+      "Images/Projects/chatbot/13.jpg",
+      "Images/Projects/chatbot/14.jpg",
+      "Images/Projects/chatbot/15.jpg",
+      "Images/Projects/chatbot/16.jpg",
+    ],
     "Flutter",
     true,
-    "https://github.com/Gaith-Kozali/Chatbot"
+    "https://github.com/Gaith-Kozali/Chatbot",
   ),
 
   new Project(
@@ -160,42 +365,51 @@ This platform delivers a safe, engaging, and data-driven learning ecosystem that
     <p>Media is sourced using the photo_manager package and processed locally (crop, rotate, etc.) then saved to cache using the path_provider package. The UI/UX was provided by Cyber Royale as part of a hands-on training project; development is ongoing and more features will be added over time.</p>
     <p>Technical highlights: Clean Architecture for clear separation of concerns; Bloc for predictable state management; device media access via photo_manager; local caching and file handling via path_provider. This project is a training app and includes planned improvements in future iterations.</p>`,
     [
-  "Images/Projects/social_app/1.jpg",
-  "Images/Projects/social_app/2.jpg",
-  "Images/Projects/social_app/3.jpg",
-  "Images/Projects/social_app/4.jpg",
-  "Images/Projects/social_app/5.jpg",
-  "Images/Projects/social_app/6.jpg",
-  "Images/Projects/social_app/7.jpg",
-  "Images/Projects/social_app/8.jpg",
-  "Images/Projects/social_app/9.jpg",
-  "Images/Projects/social_app/10.jpg",
-  "Images/Projects/social_app/11.jpg",
-  "Images/Projects/social_app/12.jpg",
-  "Images/Projects/social_app/13.jpg"
-],
+      "Images/Projects/social_app/1.jpg",
+      "Images/Projects/social_app/2.jpg",
+      "Images/Projects/social_app/3.jpg",
+      "Images/Projects/social_app/4.jpg",
+      "Images/Projects/social_app/5.jpg",
+      "Images/Projects/social_app/6.jpg",
+      "Images/Projects/social_app/7.jpg",
+      "Images/Projects/social_app/8.jpg",
+      "Images/Projects/social_app/9.jpg",
+      "Images/Projects/social_app/10.jpg",
+      "Images/Projects/social_app/11.jpg",
+      "Images/Projects/social_app/12.jpg",
+      "Images/Projects/social_app/13.jpg",
+    ],
     "Flutter, photo_manager, path_provider, video_player, gif,extended_text_field, camera",
     true,
-    "https://github.com/Gaith-Kozali/social-application"
+    "https://github.com/Gaith-Kozali/social-application",
   ),
 
   new Project(
     "News App",
     "Latest news updates",
     "A Flutter app that fetches and displays news articles from APIs with a responsive UI.",
-    ["Images/Projects/news_app/1.jpg","Images/Projects/news_app/2.jpg","Images/Projects/news_app/3.jpg","Images/Projects/news_app/4.jpg"],
+    [
+      "Images/Projects/news_app/1.jpg",
+      "Images/Projects/news_app/2.jpg",
+      "Images/Projects/news_app/3.jpg",
+      "Images/Projects/news_app/4.jpg",
+    ],
     "Flutter, REST API",
     true,
-    ""
+    "",
   ),
 
   new Project(
     "AuthLab",
     "Authentication UI demo",
     "A Flutter app with login, register, and reset password screens.",
-    ["Images/Projects/authLab/1.jpg","Images/Projects/authLab/2.jpg","Images/Projects/authLab/3.jpg"],
+    [
+      "Images/Projects/authLab/1.jpg",
+      "Images/Projects/authLab/2.jpg",
+      "Images/Projects/authLab/3.jpg",
+    ],
     "Flutter, Firebase",
     true,
-    "https://github.com/Gaith-Kozali/auth_task"
-  )
+    "https://github.com/Gaith-Kozali/auth_task",
+  ),
 ];

@@ -1,56 +1,47 @@
-import { projects } from './database.js';
+import { projects } from "./database.js";
 onload = function () {
-  
   const sentences = [
-    "Flutter Developer crafting smooth & beautiful mobile apps.",
-    "Expanding into .NET — building clean and solid backend systems.",
-    "Mastering HTML & CSS — creating modern and responsive UI designs."
+    "Building high-quality cross-platform mobile applications with Flutter and Dart.",
+    "Engineering scalable backend solutions and RESTful APIs using ASP.NET Core.",
+    "Developing modern, responsive, and user-focused web interfaces with Next.js and TypeScript.",
   ];
-
 
   let index = 0;
   const typingEl = document.getElementById("typing");
 
-  function showSentence() { 
+  function showSentence() {
     typingEl.textContent = sentences[index];
     typingEl.style.opacity = 1;
     setTimeout(() => {
-
       typingEl.style.opacity = 0;
 
       index = (index + 1) % sentences.length;
 
       setTimeout(showSentence, 1000);
-
-    }, 4000); 
+    }, 4000);
   }
-   
+
   showSentence();
   preventDownloadImg();
   projectFun();
 };
 
+export const preventDownloadImg = function () {
+  document.addEventListener("contextmenu", function (e) {
+    if (e.target.tagName === "IMG") {
+      e.preventDefault();
+    }
+  });
+};
 
+let projectFun = function () {
+  const container = document.querySelector(".projects__content");
 
+  projects.forEach((project) => {
+    const card = document.createElement("div");
+    card.className = "projects__card";
 
-export const preventDownloadImg = function(){
-document.addEventListener('contextmenu', function(e) {
-  if (e.target.tagName === 'IMG') {
-    e.preventDefault();
-  }
-});
-}
-
-
-let projectFun = function(){
-
-const container = document.querySelector(".projects__content");
-
-projects.forEach(project => {
-  const card = document.createElement("div");
-  card.className = "projects__card"; 
-
-  card.innerHTML = `
+    card.innerHTML = `
     <img src="${project.images[0]}" alt="${project.name} UI" />
     <div class="details">
       <h3>${project.name}</h3>
@@ -60,9 +51,6 @@ projects.forEach(project => {
     </div>
   `;
 
-  container.appendChild(card);
-});
-
-}
-
-
+    container.appendChild(card);
+  });
+};
